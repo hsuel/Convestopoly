@@ -1,0 +1,59 @@
+
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  grid-template-rows: repeat(7, 80px);
+  gap: 4px;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e6f4ea;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  font-size: 0.75rem;
+}
+.tile.quiz {
+  background: #fff9c4;
+  border: 2px solid #fbc02d;
+}
+.player-token {
+  position: absolute;
+  bottom: 4px;
+  font-size: 1.25rem;
+}
+.status {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.quiz-box {
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffeeba;
+  margin: 10px auto;
+  width: fit-content;
+  color: #856404;
+}
+.sort-box {
+  background: #d1ecf1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bee5eb;
+  margin: 10px auto;
+  width: fit-content;
+  color: #0c5460;
+}
